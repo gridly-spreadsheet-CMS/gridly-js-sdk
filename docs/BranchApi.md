@@ -1,0 +1,275 @@
+# GridlyClient.BranchApi
+
+All URIs are relative to *https://api.gridly.com*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**callDelete**](BranchApi.md#callDelete) | **DELETE** /v1/branches/{branchId} | delete
+[**create**](BranchApi.md#create) | **POST** /v1/branches | create
+[**get**](BranchApi.md#get) | **GET** /v1/branches/{branchId} | get
+[**list**](BranchApi.md#list) | **GET** /v1/branches | list
+[**merge**](BranchApi.md#merge) | **POST** /v1/branches/{branchId}/merge | merge
+
+
+
+## callDelete
+
+> callDelete(branchId)
+
+delete
+
+delete
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.BranchApi();
+let branchId = "branchId_example"; // String | branchId
+apiInstance.callDelete(branchId).then(() => {
+  console.log('API called successfully.');
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **branchId** | **String**| branchId | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+## create
+
+> Branch create(createBranch, opts)
+
+create
+
+create
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.BranchApi();
+let createBranch = new GridlyClient.CreateBranch(); // CreateBranch | 
+let opts = {
+  'gridId': "gridId_example", // String | gridId
+  'branchId': "branchId_example" // String | branchId
+};
+apiInstance.create(createBranch, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createBranch** | [**CreateBranch**](CreateBranch.md)|  | 
+ **gridId** | **String**| gridId | [optional] 
+ **branchId** | **String**| branchId | [optional] 
+
+### Return type
+
+[**Branch**](Branch.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## get
+
+> Branch get(branchId)
+
+get
+
+get
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.BranchApi();
+let branchId = "branchId_example"; // String | branchId
+apiInstance.get(branchId).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **branchId** | **String**| branchId | 
+
+### Return type
+
+[**Branch**](Branch.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## list
+
+> [Branch] list(gridId)
+
+list
+
+list
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.BranchApi();
+let gridId = "gridId_example"; // String | gridId
+apiInstance.list(gridId).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **gridId** | **String**| gridId | 
+
+### Return type
+
+[**[Branch]**](Branch.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## merge
+
+> Task merge(branchId, destinationBranchId, opts)
+
+merge
+
+merge
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.BranchApi();
+let branchId = "branchId_example"; // String | branchId
+let destinationBranchId = "destinationBranchId_example"; // String | destinationBranchId
+let opts = {
+  'mergeRecordOptions': ["null"] // [String] | mergeRecordOptions
+};
+apiInstance.merge(branchId, destinationBranchId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **branchId** | **String**| branchId | 
+ **destinationBranchId** | **String**| destinationBranchId | 
+ **mergeRecordOptions** | [**[String]**](String.md)| mergeRecordOptions | [optional] 
+
+### Return type
+
+[**Task**](Task.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
