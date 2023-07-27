@@ -8,9 +8,12 @@ Name | Type | Description | Notes
 **description** | **String** |  | [optional] 
 **type** | **String** |  | 
 **languageCode** | **String** |  | [optional] 
+**localizationType** | **String** |  | [optional] 
 **numberFormat** | [**NumberFormat**](NumberFormat.md) |  | [optional] 
 **selectionOptions** | **[String]** |  | [optional] 
 **reference** | [**Reference**](Reference.md) |  | [optional] 
+**formula** | [**Formula**](Formula.md) |  | [optional] 
+**dateTimeFormat** | [**DateTimeFormat**](DateTimeFormat.md) |  | [optional] 
 **id** | **String** |  | [optional] 
 
 
@@ -78,6 +81,8 @@ Name | Type | Description | Notes
 * `koKR` (value: `"koKR"`)
 
 * `plPL` (value: `"plPL"`)
+
+* `ptAO` (value: `"ptAO"`)
 
 * `ptBR` (value: `"ptBR"`)
 
@@ -216,6 +221,20 @@ Name | Type | Description | Notes
 * `enZA` (value: `"enZA"`)
 
 * `enZW` (value: `"enZW"`)
+
+* `enSG` (value: `"enSG"`)
+
+* `enIN` (value: `"enIN"`)
+
+* `enGH` (value: `"enGH"`)
+
+* `enRW` (value: `"enRW"`)
+
+* `enZM` (value: `"enZM"`)
+
+* `enKE` (value: `"enKE"`)
+
+* `enNG` (value: `"enNG"`)
 
 * `esAR` (value: `"esAR"`)
 
@@ -367,6 +386,8 @@ Name | Type | Description | Notes
 
 * `zuZA` (value: `"zuZA"`)
 
+* `am` (value: `"am"`)
+
 * `hy` (value: `"hy"`)
 
 * `az` (value: `"az"`)
@@ -396,6 +417,8 @@ Name | Type | Description | Notes
 * `id` (value: `"id"`)
 
 * `it` (value: `"it"`)
+
+* `km` (value: `"km"`)
 
 * `mi` (value: `"mi"`)
 
@@ -515,6 +538,8 @@ Name | Type | Description | Notes
 
 * `sr` (value: `"sr"`)
 
+* `si` (value: `"si"`)
+
 * `tl` (value: `"tl"`)
 
 * `th` (value: `"th"`)
@@ -524,6 +549,17 @@ Name | Type | Description | Notes
 * `zu` (value: `"zu"`)
 
 * `no` (value: `"no"`)
+
+
+
+
+
+## Enum: LocalizationTypeEnum
+
+
+* `sourceLanguage` (value: `"sourceLanguage"`)
+
+* `targetLanguage` (value: `"targetLanguage"`)
 
 
 
