@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**callExport**](ViewApi.md#callExport) | **GET** /v1/views/{viewId}/export | export
 [**create**](ViewApi.md#create) | **POST** /v1/views | create
 [**get**](ViewApi.md#get) | **GET** /v1/views/{viewId} | get
+[**getStatistic**](ViewApi.md#getStatistic) | **GET** /v1/views/{viewId}/statistic | getStatistic
 [**importView**](ViewApi.md#importView) | **POST** /v1/views/{viewId}/import | importView
 [**list**](ViewApi.md#list) | **GET** /v1/views | list
 [**merge**](ViewApi.md#merge) | **POST** /v1/views/{viewId}/merge | merge
@@ -176,6 +177,60 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**View**](View.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getStatistic
+
+> ViewStatistic getStatistic(viewId, opts)
+
+getStatistic
+
+getStatistic
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.ViewApi();
+let viewId = "viewId_example"; // String | viewId
+let opts = {
+  'columnIds': ["null"] // [String] | columnIds
+};
+apiInstance.getStatistic(viewId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **viewId** | **String**| viewId | 
+ **columnIds** | [**[String]**](String.md)| columnIds | [optional] 
+
+### Return type
+
+[**ViewStatistic**](ViewStatistic.md)
 
 ### Authorization
 

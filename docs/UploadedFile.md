@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **originalName** | **String** |  | [optional] 
 **contentType** | **String** |  | [optional] 
 **size** | **Number** |  | [optional] 
+**thumbnailId** | **String** |  | [optional] 
 
 

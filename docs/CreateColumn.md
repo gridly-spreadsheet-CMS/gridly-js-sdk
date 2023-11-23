@@ -4,9 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **String** |  | [optional] 
 **name** | **String** |  | 
 **description** | **String** |  | [optional] 
 **type** | **String** |  | 
+**editable** | **Boolean** |  | [optional] 
 **languageCode** | **String** |  | [optional] 
 **localizationType** | **String** |  | [optional] 
 **numberFormat** | [**NumberFormat**](NumberFormat.md) |  | [optional] 
@@ -14,7 +16,6 @@ Name | Type | Description | Notes
 **reference** | [**Reference**](Reference.md) |  | [optional] 
 **formula** | [**Formula**](Formula.md) |  | [optional] 
 **dateTimeFormat** | [**DateTimeFormat**](DateTimeFormat.md) |  | [optional] 
-**id** | **String** |  | [optional] 
 
 
 

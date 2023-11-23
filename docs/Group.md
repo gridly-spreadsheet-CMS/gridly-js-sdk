@@ -10,6 +10,9 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **logoUrl** | **String** |  | [optional] 
 **type** | **String** |  | [optional] 
+**shareType** | **String** |  | [optional] 
+**createdDate** | **Date** |  | [optional] 
+**lastModifiedDate** | **Date** |  | [optional] 
 **isSystemGroup** | **Boolean** |  | [optional] 
 **systemGroup** | **Boolean** |  | [optional] 
 
@@ -21,6 +24,25 @@ Name | Type | Description | Notes
 * `NORMAL` (value: `"NORMAL"`)
 
 * `ADMIN` (value: `"ADMIN"`)
+
+
+
+
+
+## Enum: ShareTypeEnum
+
+
+* `none` (value: `"none"`)
+
+* `full` (value: `"full"`)
+
+* `project` (value: `"project"`)
+
+* `database` (value: `"database"`)
+
+* `grid` (value: `"grid"`)
+
+* `view` (value: `"view"`)
 
 
 
