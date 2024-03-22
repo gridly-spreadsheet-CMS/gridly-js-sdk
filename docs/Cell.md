@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **columnId** | **String** |  | [optional] 
 **dependencyStatus** | **String** |  | [optional] 
+**lengthLimit** | **Number** |  | [optional] 
 **referencedIds** | **[String]** |  | [optional] 
 **sourceStatus** | **String** |  | [optional] 
 **tm** | **Boolean** |  | [optional] 
@@ -38,6 +39,8 @@ Name | Type | Description | Notes
 * `readyForTranslation` (value: `"readyForTranslation"`)
 
 * `locked` (value: `"locked"`)
+
+* `lockAllLanguages` (value: `"lockAllLanguages"`)
 
 
 

@@ -4,9 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **String** |  | [optional] 
 **name** | **String** |  | 
 **templateGridId** | **String** |  | [optional] 
 **recordIdentifierType** | **String** |  | [optional] 
+**columns** | [**[CreateColumn]**](CreateColumn.md) |  | [optional] 
 **metadata** | **{String: String}** |  | [optional] 
 
 

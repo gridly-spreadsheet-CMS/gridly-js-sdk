@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **fuzzyMatch** | **Boolean** |  | [optional] 
 **isDisabled** | **Boolean** |  | [optional] 
 **isPausedConsuming** | **Boolean** |  | [optional] 
+**contextLookup** | **Boolean** |  | [optional] 
 **populateTranslationStatus** | [**TranslationStatus**](TranslationStatus.md) |  | [optional] 
 
 

@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **isDisabled** | **Boolean** |  | [optional] 
 **isPausedConsuming** | **Boolean** |  | [optional] 
 **populateTranslationStatus** | [**TranslationStatus**](TranslationStatus.md) |  | [optional] 
+**contextLookup** | **Boolean** |  | [optional] 
 
 

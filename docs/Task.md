@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 
 * `retrySuccessful` (value: `"retrySuccessful"`)
 
+* `cancel` (value: `"cancel"`)
+
 
 
 

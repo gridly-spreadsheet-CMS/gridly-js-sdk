@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**callDelete**](RecordApi.md#callDelete) | **DELETE** /v1/views/{viewId}/records | delete
 [**create**](RecordApi.md#create) | **POST** /v1/views/{viewId}/records | create
 [**fetch**](RecordApi.md#fetch) | **GET** /v1/views/{viewId}/records | fetch
+[**fetchHistories**](RecordApi.md#fetchHistories) | **GET** /v1/views/{viewId}/records/{recordId}/histories | fetchHistories
 [**update**](RecordApi.md#update) | **PATCH** /v1/views/{viewId}/records | update
 [**updateRecord**](RecordApi.md#updateRecord) | **PATCH** /v1/views/{viewId}/records/{id} | updateRecord
 
@@ -142,7 +143,9 @@ let opts = {
   'page': "'{}'", // String | page
   'query': "'{}'", // String | query
   'sort': "'{}'", // String | sort
-  'fetchFileOption': new GridlyClient.FetchFileOption() // FetchFileOption | fetchFileOption
+  'fetchFileOption': new GridlyClient.FetchFileOption(), // FetchFileOption | fetchFileOption
+  'afterRecordId': "afterRecordId_example", // String | afterRecordId
+  'beforeRecordId': "beforeRecordId_example" // String | beforeRecordId
 };
 apiInstance.fetch(viewId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -163,10 +166,66 @@ Name | Type | Description  | Notes
  **query** | **String**| query | [optional] [default to &#39;{}&#39;]
  **sort** | **String**| sort | [optional] [default to &#39;{}&#39;]
  **fetchFileOption** | [**FetchFileOption**](.md)| fetchFileOption | [optional] 
+ **afterRecordId** | **String**| afterRecordId | [optional] 
+ **beforeRecordId** | **String**| beforeRecordId | [optional] 
 
 ### Return type
 
 [**[Record]**](Record.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## fetchHistories
+
+> [RecordHistory] fetchHistories(viewId, recordId, fetchRequest)
+
+fetchHistories
+
+fetchHistories
+
+### Example
+
+```javascript
+import GridlyClient from 'gridly-client';
+let defaultClient = GridlyClient.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new GridlyClient.RecordApi();
+let viewId = "viewId_example"; // String | viewId
+let recordId = "recordId_example"; // String | recordId
+let fetchRequest = {key: null}; // FetchRecordHistoryRequest | fetchRequest
+apiInstance.fetchHistories(viewId, recordId, fetchRequest).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **viewId** | **String**| viewId | 
+ **recordId** | **String**| recordId | 
+ **fetchRequest** | [**FetchRecordHistoryRequest**](.md)| fetchRequest | 
+
+### Return type
+
+[**[RecordHistory]**](RecordHistory.md)
 
 ### Authorization
 

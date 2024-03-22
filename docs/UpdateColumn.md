@@ -6,10 +6,58 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** |  | [optional] 
 **description** | **String** |  | [optional] 
+**type** | **String** |  | [optional] 
 **languageCode** | **String** |  | [optional] 
+**localizationType** | **String** |  | [optional] 
 **selectionOptions** | **[String]** |  | [optional] 
 **numberFormat** | [**NumberFormat**](NumberFormat.md) |  | [optional] 
+**reference** | [**Reference**](Reference.md) |  | [optional] 
+**formula** | [**Formula**](Formula.md) |  | [optional] 
+**dateTimeFormat** | [**DateTimeFormat**](DateTimeFormat.md) |  | [optional] 
+**viewable** | **Boolean** |  | [optional] 
+**editable** | **Boolean** |  | [optional] 
 **newId** | **String** |  | [optional] 
+
+
+
+## Enum: TypeEnum
+
+
+* `singleLine` (value: `"singleLine"`)
+
+* `multipleLines` (value: `"multipleLines"`)
+
+* `richText` (value: `"richText"`)
+
+* `markdown` (value: `"markdown"`)
+
+* `singleSelection` (value: `"singleSelection"`)
+
+* `multipleSelections` (value: `"multipleSelections"`)
+
+* `boolean` (value: `"boolean"`)
+
+* `number` (value: `"number"`)
+
+* `datetime` (value: `"datetime"`)
+
+* `files` (value: `"files"`)
+
+* `reference` (value: `"reference"`)
+
+* `lookup` (value: `"lookup"`)
+
+* `language` (value: `"language"`)
+
+* `json` (value: `"json"`)
+
+* `yaml` (value: `"yaml"`)
+
+* `html` (value: `"html"`)
+
+* `formula` (value: `"formula"`)
+
+
 
 
 
@@ -35,6 +83,8 @@ Name | Type | Description | Notes
 * `koKR` (value: `"koKR"`)
 
 * `plPL` (value: `"plPL"`)
+
+* `ptAO` (value: `"ptAO"`)
 
 * `ptBR` (value: `"ptBR"`)
 
@@ -173,6 +223,20 @@ Name | Type | Description | Notes
 * `enZA` (value: `"enZA"`)
 
 * `enZW` (value: `"enZW"`)
+
+* `enSG` (value: `"enSG"`)
+
+* `enIN` (value: `"enIN"`)
+
+* `enGH` (value: `"enGH"`)
+
+* `enRW` (value: `"enRW"`)
+
+* `enZM` (value: `"enZM"`)
+
+* `enKE` (value: `"enKE"`)
+
+* `enNG` (value: `"enNG"`)
 
 * `esAR` (value: `"esAR"`)
 
@@ -324,6 +388,8 @@ Name | Type | Description | Notes
 
 * `zuZA` (value: `"zuZA"`)
 
+* `am` (value: `"am"`)
+
 * `hy` (value: `"hy"`)
 
 * `az` (value: `"az"`)
@@ -353,6 +419,8 @@ Name | Type | Description | Notes
 * `id` (value: `"id"`)
 
 * `it` (value: `"it"`)
+
+* `km` (value: `"km"`)
 
 * `mi` (value: `"mi"`)
 
@@ -472,6 +540,8 @@ Name | Type | Description | Notes
 
 * `sr` (value: `"sr"`)
 
+* `si` (value: `"si"`)
+
 * `tl` (value: `"tl"`)
 
 * `th` (value: `"th"`)
@@ -481,6 +551,17 @@ Name | Type | Description | Notes
 * `zu` (value: `"zu"`)
 
 * `no` (value: `"no"`)
+
+
+
+
+
+## Enum: LocalizationTypeEnum
+
+
+* `sourceLanguage` (value: `"sourceLanguage"`)
+
+* `targetLanguage` (value: `"targetLanguage"`)
 
 
 
