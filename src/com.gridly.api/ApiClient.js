@@ -55,7 +55,7 @@ class ApiClient {
          * @default {}
          */
         this.defaultHeaders = {
-            'User-Agent': 'Gridly JavaScript SDK 1.2.11'
+            'User-Agent': 'Gridly JavaScript SDK 1.2.12'
         };
 
         /**
