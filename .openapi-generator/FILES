@@ -5,6 +5,8 @@ README.md
 docs/AddViewColumn.md
 docs/Branch.md
 docs/BranchApi.md
+docs/BranchDiffCell.md
+docs/BranchDiffRecord.md
 docs/Cell.md
 docs/CellHistory.md
 docs/ColumnReference.md
@@ -14,6 +16,7 @@ docs/CreateColumn.md
 docs/CreateDatabase.md
 docs/CreateDependency.md
 docs/CreateFileCategory.md
+docs/CreateGlossary.md
 docs/CreateGrid.md
 docs/CreatePath.md
 docs/CreateProject.md
@@ -22,7 +25,6 @@ docs/CreateTransMem.md
 docs/CreateView.md
 docs/Database.md
 docs/DatabaseApi.md
-docs/DateFormat.md
 docs/DateTimeFormat.md
 docs/DeleteDependency.md
 docs/DeleteFile.md
@@ -32,12 +34,22 @@ docs/Dependency.md
 docs/ExportFileHeader.md
 docs/ExportFormat.md
 docs/FetchFileOption.md
+docs/FetchRecordHistoryRequest.md
 docs/FileCategory.md
+docs/FilterField.md
 docs/Formula.md
+docs/Glossary.md
+docs/GlossaryApi.md
+docs/GlossaryExportFormat.md
+docs/GlossaryProject.md
 docs/Grid.md
 docs/GridApi.md
 docs/GridSetting.md
 docs/Group.md
+docs/ImportOption.md
+docs/MergeBranchRequest.md
+docs/MergeCellConflict.md
+docs/MergeRecordConflict.md
 docs/MovePath.md
 docs/NumberFormat.md
 docs/PathApi.md
@@ -71,6 +83,7 @@ docs/UpdateCategory.md
 docs/UpdateColumn.md
 docs/UpdateDatabase.md
 docs/UpdateDependency.md
+docs/UpdateGlossary.md
 docs/UpdateGrid.md
 docs/UpdateGridSetting.md
 docs/UpdatePath.md
@@ -93,6 +106,8 @@ src/com.gridly.api/ApiClient.js
 src/com.gridly.api/index.js
 src/com.gridly.api/model/AddViewColumn.js
 src/com.gridly.api/model/Branch.js
+src/com.gridly.api/model/BranchDiffCell.js
+src/com.gridly.api/model/BranchDiffRecord.js
 src/com.gridly.api/model/Cell.js
 src/com.gridly.api/model/CellHistory.js
 src/com.gridly.api/model/ColumnReference.js
@@ -102,6 +117,7 @@ src/com.gridly.api/model/CreateColumn.js
 src/com.gridly.api/model/CreateDatabase.js
 src/com.gridly.api/model/CreateDependency.js
 src/com.gridly.api/model/CreateFileCategory.js
+src/com.gridly.api/model/CreateGlossary.js
 src/com.gridly.api/model/CreateGrid.js
 src/com.gridly.api/model/CreatePath.js
 src/com.gridly.api/model/CreateProject.js
@@ -109,7 +125,6 @@ src/com.gridly.api/model/CreateShareView.js
 src/com.gridly.api/model/CreateTransMem.js
 src/com.gridly.api/model/CreateView.js
 src/com.gridly.api/model/Database.js
-src/com.gridly.api/model/DateFormat.js
 src/com.gridly.api/model/DateTimeFormat.js
 src/com.gridly.api/model/DeleteDependency.js
 src/com.gridly.api/model/DeleteFile.js
@@ -119,11 +134,20 @@ src/com.gridly.api/model/Dependency.js
 src/com.gridly.api/model/ExportFileHeader.js
 src/com.gridly.api/model/ExportFormat.js
 src/com.gridly.api/model/FetchFileOption.js
+src/com.gridly.api/model/FetchRecordHistoryRequest.js
 src/com.gridly.api/model/FileCategory.js
+src/com.gridly.api/model/FilterField.js
 src/com.gridly.api/model/Formula.js
+src/com.gridly.api/model/Glossary.js
+src/com.gridly.api/model/GlossaryExportFormat.js
+src/com.gridly.api/model/GlossaryProject.js
 src/com.gridly.api/model/Grid.js
 src/com.gridly.api/model/GridSetting.js
 src/com.gridly.api/model/Group.js
+src/com.gridly.api/model/ImportOption.js
+src/com.gridly.api/model/MergeBranchRequest.js
+src/com.gridly.api/model/MergeCellConflict.js
+src/com.gridly.api/model/MergeRecordConflict.js
 src/com.gridly.api/model/MovePath.js
 src/com.gridly.api/model/NumberFormat.js
 src/com.gridly.api/model/PathList.js
@@ -151,6 +175,7 @@ src/com.gridly.api/model/UpdateCategory.js
 src/com.gridly.api/model/UpdateColumn.js
 src/com.gridly.api/model/UpdateDatabase.js
 src/com.gridly.api/model/UpdateDependency.js
+src/com.gridly.api/model/UpdateGlossary.js
 src/com.gridly.api/model/UpdateGrid.js
 src/com.gridly.api/model/UpdateGridSetting.js
 src/com.gridly.api/model/UpdatePath.js
@@ -164,6 +189,7 @@ src/com.gridly.api/model/ViewColumn.js
 src/com.gridly.api/model/ViewStatistic.js
 src/com.gridly.api/service/BranchApi.js
 src/com.gridly.api/service/DatabaseApi.js
+src/com.gridly.api/service/GlossaryApi.js
 src/com.gridly.api/service/GridApi.js
 src/com.gridly.api/service/PathApi.js
 src/com.gridly.api/service/ProjectApi.js
@@ -175,3 +201,4 @@ src/com.gridly.api/service/ViewApi.js
 src/com.gridly.api/service/ViewColumnApi.js
 src/com.gridly.api/service/ViewDependencyApi.js
 src/com.gridly.api/service/ViewFileApi.js
+test/com.gridly.api/api/GlossaryApi.spec.js

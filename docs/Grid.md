@@ -51,6 +51,8 @@ Name | Type | Description | Notes
 
 * `clearingRecords` (value: `"clearingRecords"`)
 
+* `copying` (value: `"copying"`)
+
 
 
 

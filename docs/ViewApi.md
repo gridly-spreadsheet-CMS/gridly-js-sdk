@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ## merge
 
-> Task merge(destinationViewId, viewId, opts)
+> Task merge(destinationViewId, viewId, mergeBranchRequest, opts)
 
 merge
 
@@ -378,10 +378,11 @@ ApiKey.apiKey = 'YOUR API KEY';
 let apiInstance = new GridlyClient.ViewApi();
 let destinationViewId = "destinationViewId_example"; // String | destinationViewId
 let viewId = "viewId_example"; // String | viewId
+let mergeBranchRequest = new GridlyClient.MergeBranchRequest(); // MergeBranchRequest | 
 let opts = {
   'mergeRecordOptions': ["null"] // [String] | mergeRecordOptions
 };
-apiInstance.merge(destinationViewId, viewId, opts).then((data) => {
+apiInstance.merge(destinationViewId, viewId, mergeBranchRequest, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -396,6 +397,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **destinationViewId** | **String**| destinationViewId | 
  **viewId** | **String**| viewId | 
+ **mergeBranchRequest** | [**MergeBranchRequest**](MergeBranchRequest.md)|  | 
  **mergeRecordOptions** | [**[String]**](String.md)| mergeRecordOptions | [optional] 
 
 ### Return type
@@ -408,6 +410,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
+- **Content-Type**: application/json
 - **Accept**: application/json
 

@@ -13,5 +13,7 @@ Name | Type | Description | Notes
 **name** | **String** |  | 
 **description** | **String** |  | [optional] 
 **fuzzyMatch** | **Boolean** |  | [optional] 
+**allowAlternative** | **Boolean** |  | [optional] 
+**allowAlternativeHasSameRecordId** | **Boolean** |  | [optional] 
 
 

@@ -40,6 +40,8 @@ Name | Type | Description | Notes
 
 * `locked` (value: `"locked"`)
 
+* `lockAllLanguages` (value: `"lockAllLanguages"`)
+
 
 
 

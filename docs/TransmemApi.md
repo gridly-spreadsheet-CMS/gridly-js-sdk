@@ -333,7 +333,7 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new GridlyClient.TransmemApi();
 let tmId = "tmId_example"; // String | 
-let file = "/path/to/file"; // File | 
+let file = {key: null}; // Object | 
 apiInstance.importTmx(tmId, file).then(() => {
   console.log('API called successfully.');
 }, (error) => {
@@ -348,7 +348,7 @@ apiInstance.importTmx(tmId, file).then(() => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tmId** | **String**|  | 
- **file** | **File**|  | 
+ **file** | [**Object**](Object.md)|  | 
 
 ### Return type
 

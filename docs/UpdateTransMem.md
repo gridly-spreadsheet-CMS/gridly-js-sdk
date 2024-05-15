@@ -12,5 +12,7 @@ Name | Type | Description | Notes
 **isPausedConsuming** | **Boolean** |  | [optional] 
 **populateTranslationStatus** | [**TranslationStatus**](TranslationStatus.md) |  | [optional] 
 **contextLookup** | **Boolean** |  | [optional] 
+**allowAlternative** | **Boolean** |  | [optional] 
+**allowAlternativeHasSameRecordId** | **Boolean** |  | [optional] 
 
 

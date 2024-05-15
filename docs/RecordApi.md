@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ## fetchHistories
 
-> [RecordHistory] fetchHistories(viewId, recordId, opts)
+> [RecordHistory] fetchHistories(viewId, recordId, fetchRequest)
 
 fetchHistories
 
@@ -205,10 +205,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 let apiInstance = new GridlyClient.RecordApi();
 let viewId = "viewId_example"; // String | viewId
 let recordId = "recordId_example"; // String | recordId
-let opts = {
-  'page': "'{}'" // String | page
-};
-apiInstance.fetchHistories(viewId, recordId, opts).then((data) => {
+let fetchRequest = {key: null}; // FetchRecordHistoryRequest | fetchRequest
+apiInstance.fetchHistories(viewId, recordId, fetchRequest).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -223,7 +221,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **viewId** | **String**| viewId | 
  **recordId** | **String**| recordId | 
- **page** | **String**| page | [optional] [default to &#39;{}&#39;]
+ **fetchRequest** | [**FetchRecordHistoryRequest**](.md)| fetchRequest | 
 
 ### Return type
 
