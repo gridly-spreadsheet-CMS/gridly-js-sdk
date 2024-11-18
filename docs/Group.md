@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **shareType** | **String** |  | [optional] 
 **createdDate** | **Date** |  | [optional] 
 **lastModifiedDate** | **Date** |  | [optional] 
-**isSystemGroup** | **Boolean** |  | [optional] 
 **systemGroup** | **Boolean** |  | [optional] 
+**isSystemGroup** | **Boolean** |  | [optional] 
 
 
 

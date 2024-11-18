@@ -7,6 +7,8 @@ docs/Branch.md
 docs/BranchApi.md
 docs/BranchDiffCell.md
 docs/BranchDiffRecord.md
+docs/CDN.md
+docs/CdnApi.md
 docs/Cell.md
 docs/CellHistory.md
 docs/ColumnReference.md
@@ -36,6 +38,7 @@ docs/ExportFormat.md
 docs/FetchFileOption.md
 docs/FetchRecordHistoryRequest.md
 docs/FileCategory.md
+docs/FileType.md
 docs/FilterField.md
 docs/Formula.md
 docs/Glossary.md
@@ -56,7 +59,6 @@ docs/PathApi.md
 docs/PathList.md
 docs/PathNode.md
 docs/PathSingle.md
-docs/Privilege.md
 docs/Project.md
 docs/ProjectApi.md
 docs/ProjectDetail.md
@@ -67,7 +69,6 @@ docs/RecordIdentifierWrapper.md
 docs/Reference.md
 docs/ReferencedColumn.md
 docs/ReferencedGrid.md
-docs/Role.md
 docs/SetCell.md
 docs/SetRecord.md
 docs/SettingFile.md
@@ -90,7 +91,6 @@ docs/UpdatePath.md
 docs/UpdateProject.md
 docs/UpdateTransMem.md
 docs/UploadSettingFileRequest.md
-docs/UploadZipRequest.md
 docs/UploadedFile.md
 docs/View.md
 docs/ViewApi.md
@@ -108,6 +108,7 @@ src/com.gridly.api/model/AddViewColumn.js
 src/com.gridly.api/model/Branch.js
 src/com.gridly.api/model/BranchDiffCell.js
 src/com.gridly.api/model/BranchDiffRecord.js
+src/com.gridly.api/model/CDN.js
 src/com.gridly.api/model/Cell.js
 src/com.gridly.api/model/CellHistory.js
 src/com.gridly.api/model/ColumnReference.js
@@ -136,6 +137,7 @@ src/com.gridly.api/model/ExportFormat.js
 src/com.gridly.api/model/FetchFileOption.js
 src/com.gridly.api/model/FetchRecordHistoryRequest.js
 src/com.gridly.api/model/FileCategory.js
+src/com.gridly.api/model/FileType.js
 src/com.gridly.api/model/FilterField.js
 src/com.gridly.api/model/Formula.js
 src/com.gridly.api/model/Glossary.js
@@ -153,7 +155,6 @@ src/com.gridly.api/model/NumberFormat.js
 src/com.gridly.api/model/PathList.js
 src/com.gridly.api/model/PathNode.js
 src/com.gridly.api/model/PathSingle.js
-src/com.gridly.api/model/Privilege.js
 src/com.gridly.api/model/Project.js
 src/com.gridly.api/model/ProjectDetail.js
 src/com.gridly.api/model/Record.js
@@ -162,7 +163,6 @@ src/com.gridly.api/model/RecordIdentifierWrapper.js
 src/com.gridly.api/model/Reference.js
 src/com.gridly.api/model/ReferencedColumn.js
 src/com.gridly.api/model/ReferencedGrid.js
-src/com.gridly.api/model/Role.js
 src/com.gridly.api/model/SetCell.js
 src/com.gridly.api/model/SetRecord.js
 src/com.gridly.api/model/SettingFile.js
@@ -182,12 +182,12 @@ src/com.gridly.api/model/UpdatePath.js
 src/com.gridly.api/model/UpdateProject.js
 src/com.gridly.api/model/UpdateTransMem.js
 src/com.gridly.api/model/UploadSettingFileRequest.js
-src/com.gridly.api/model/UploadZipRequest.js
 src/com.gridly.api/model/UploadedFile.js
 src/com.gridly.api/model/View.js
 src/com.gridly.api/model/ViewColumn.js
 src/com.gridly.api/model/ViewStatistic.js
 src/com.gridly.api/service/BranchApi.js
+src/com.gridly.api/service/CdnApi.js
 src/com.gridly.api/service/DatabaseApi.js
 src/com.gridly.api/service/GlossaryApi.js
 src/com.gridly.api/service/GridApi.js
@@ -201,4 +201,3 @@ src/com.gridly.api/service/ViewApi.js
 src/com.gridly.api/service/ViewColumnApi.js
 src/com.gridly.api/service/ViewDependencyApi.js
 src/com.gridly.api/service/ViewFileApi.js
-test/com.gridly.api/api/GlossaryApi.spec.js

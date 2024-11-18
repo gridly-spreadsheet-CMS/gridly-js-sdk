@@ -40,7 +40,7 @@ let opts = {
   'fileHeader': new GridlyClient.ExportFileHeader(), // ExportFileHeader | fileHeader
   'query': "'{}'", // String | query
   'sort': "'{}'", // String | sort
-  'type': "'csv'" // String | type
+  'type': new GridlyClient.FileType() // FileType | type
 };
 apiInstance.callExport(viewId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
  **fileHeader** | [**ExportFileHeader**](.md)| fileHeader | [optional] 
  **query** | **String**| query | [optional] [default to &#39;{}&#39;]
  **sort** | **String**| sort | [optional] [default to &#39;{}&#39;]
- **type** | **String**| type | [optional] [default to &#39;csv&#39;]
+ **type** | [**FileType**](.md)| type | [optional] 
 
 ### Return type
 
@@ -266,7 +266,7 @@ let viewId = "viewId_example"; // String | viewId
 let file = "/path/to/file"; // File | The following file types are supported: csv, tsv, xls, xlsx and json
 let opts = {
   'importRequest': "'{}'", // String | importRequest
-  'type': "'csv'" // String | type
+  'type': new GridlyClient.FileType() // FileType | type
 };
 apiInstance.importView(viewId, file, opts).then(() => {
   console.log('API called successfully.');
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
  **viewId** | **String**| viewId | 
  **file** | **File**| The following file types are supported: csv, tsv, xls, xlsx and json | 
  **importRequest** | **String**| importRequest | [optional] [default to &#39;{}&#39;]
- **type** | **String**| type | [optional] [default to &#39;csv&#39;]
+ **type** | [**FileType**](.md)| type | [optional] 
 
 ### Return type
 

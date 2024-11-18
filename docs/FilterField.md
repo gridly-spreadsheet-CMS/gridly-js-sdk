@@ -84,47 +84,53 @@ Name | Type | Description | Notes
 ## Enum: SubFieldEnum
 
 
-* `DEPENDENCY_STATUS` (value: `"DEPENDENCY_STATUS"`)
+* `dependencyStatus` (value: `"_dependencyStatus"`)
 
-* `SOURCE_STATUS` (value: `"SOURCE_STATUS"`)
+* `sourceStatus` (value: `"_sourceStatus"`)
 
-* `TARGET_STATUS` (value: `"TARGET_STATUS"`)
+* `targetStatus` (value: `"_targetStatus"`)
 
-* `FLOW_STATUS` (value: `"FLOW_STATUS"`)
+* `flowStatus` (value: `"_flowStatus"`)
 
-* `TM` (value: `"TM"`)
+* `tm` (value: `"_tm"`)
 
-* `MT` (value: `"MT"`)
+* `mt` (value: `"_mt"`)
 
-* `TICKET` (value: `"TICKET"`)
+* `ticket` (value: `"_ticket"`)
 
-* `COLOR` (value: `"COLOR"`)
+* `color` (value: `"_color"`)
 
-* `METADATA` (value: `"METADATA"`)
+* `metadata` (value: `"_metadata"`)
 
-* `CELL_METADATA` (value: `"CELL_METADATA"`)
+* `cell_metadata` (value: `"_cell_metadata"`)
 
-* `WORD_COUNT` (value: `"WORD_COUNT"`)
+* `word_count` (value: `"_word_count"`)
 
-* `PREVIEW_SOURCE_DATA` (value: `"PREVIEW_SOURCE_DATA"`)
+* `previewSourceData` (value: `"_previewSourceData"`)
 
-* `PREVIEW_SOURCE_DEPENDENCY_STATUS` (value: `"PREVIEW_SOURCE_DEPENDENCY_STATUS"`)
+* `previewSourceDependencyStatus` (value: `"_previewSourceDependencyStatus"`)
 
-* `PREVIEW_STATUS` (value: `"PREVIEW_STATUS"`)
+* `previewStatus` (value: `"_previewStatus"`)
 
-* `PREVIEW_MERGE_OPTION` (value: `"PREVIEW_MERGE_OPTION"`)
+* `previewMergeOption` (value: `"_previewMergeOption"`)
 
-* `RELATIVE_TIME` (value: `"RELATIVE_TIME"`)
+* `relativeTime` (value: `"_relativeTime"`)
 
-* `LENGTH_VIOLATED` (value: `"LENGTH_VIOLATED"`)
+* `length_violated` (value: `"_length_violated"`)
 
-* `LENGTH_SETTING` (value: `"LENGTH_SETTING"`)
+* `lengthSetting` (value: `"_lengthSetting"`)
 
-* `WORKFLOW_STATUS` (value: `"WORKFLOW_STATUS"`)
+* `workflow` (value: `"_workflow"`)
 
-* `REPETITION` (value: `"REPETITION"`)
+* `workflowStepTransitioned` (value: `"_workflowStepTransitioned"`)
 
-* `QA_CHECK_STATUS` (value: `"QA_CHECK_STATUS"`)
+* `repetition` (value: `"_repetition"`)
+
+* `qaCheckStatus` (value: `"_qaCheckStatus"`)
+
+* `spellCheckStatus` (value: `"_spellCheckStatus"`)
+
+* `hasTag` (value: `"_hasTag"`)
 
 
 

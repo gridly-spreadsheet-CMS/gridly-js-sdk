@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
-* `DECIMAL` (value: `"DECIMAL"`)
+* `decimal` (value: `"decimal"`)
 
-* `INTEGER` (value: `"INTEGER"`)
+* `integer` (value: `"integer"`)
 
 
 

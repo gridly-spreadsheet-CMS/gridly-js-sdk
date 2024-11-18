@@ -40,6 +40,8 @@ Name | Type | Description | Notes
 
 * `copying` (value: `"copying"`)
 
+* `updatingWorkflow` (value: `"updatingWorkflow"`)
+
 
 
 

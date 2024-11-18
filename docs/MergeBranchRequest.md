@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **mergeRecordOptions** | **[String]** |  | [optional] 
 **mergeRecordConflicts** | [**[MergeRecordConflict]**](MergeRecordConflict.md) |  | [optional] 
 **useLastMergeResolve** | **Boolean** |  | [optional] 
+**checkMismatchedColumnType** | **Boolean** |  | [optional] 
 **query** | [**[FilterField]**](FilterField.md) |  | [optional] 
 
 

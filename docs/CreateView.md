@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**gridId** | **String** |  | [optional] 
+**name** | **String** |  | 
+**gridId** | **String** |  | 
 **columns** | [**[AddViewColumn]**](AddViewColumn.md) |  | [optional] 
 
 

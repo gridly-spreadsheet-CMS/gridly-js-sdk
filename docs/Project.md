@@ -8,6 +8,19 @@ Name | Type | Description | Notes
 **companyId** | **Number** |  | [optional] 
 **name** | **String** |  | [optional] 
 **description** | **String** |  | [optional] 
-**role** | [**Role**](Role.md) |  | [optional] 
+**type** | **String** |  | [optional] 
+
+
+
+## Enum: TypeEnum
+
+
+* `DEFAULT` (value: `"DEFAULT"`)
+
+* `INTERNAL` (value: `"INTERNAL"`)
+
+* `TMS` (value: `"TMS"`)
+
+
 
 

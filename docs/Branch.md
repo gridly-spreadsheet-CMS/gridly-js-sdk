@@ -8,11 +8,11 @@ Name | Type | Description | Notes
 **columns** | [**[ViewColumn]**](ViewColumn.md) |  | [optional] 
 **defaultAccessViewId** | **String** |  | [optional] 
 **description** | **String** |  | [optional] 
+**isMaster** | **Boolean** |  | [optional] 
 **metadata** | **{String: String}** |  | [optional] 
 **name** | **String** |  | [optional] 
 **recordIdentifierType** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
-**isMaster** | **Boolean** |  | [optional] 
 
 
 
@@ -53,6 +53,8 @@ Name | Type | Description | Notes
 * `clearingRecords` (value: `"clearingRecords"`)
 
 * `copying` (value: `"copying"`)
+
+* `updatingWorkflow` (value: `"updatingWorkflow"`)
 
 
 

@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
-* `ROW` (value: `"ROW"`)
+* `row` (value: `"row"`)
 
-* `CELL` (value: `"CELL"`)
+* `cell` (value: `"cell"`)
 
 
 
@@ -26,9 +26,9 @@ Name | Type | Description | Notes
 ## Enum: SelectionTypeEnum
 
 
-* `SINGLE` (value: `"SINGLE"`)
+* `single` (value: `"single"`)
 
-* `MULTIPLE` (value: `"MULTIPLE"`)
+* `multiple` (value: `"multiple"`)
 
 
 

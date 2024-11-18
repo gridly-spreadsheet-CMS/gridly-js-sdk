@@ -56,6 +56,8 @@ Name | Type | Description | Notes
 
 * `formula` (value: `"formula"`)
 
+* `user` (value: `"user"`)
+
 
 
 
@@ -104,6 +106,8 @@ Name | Type | Description | Notes
 * `csCZ` (value: `"csCZ"`)
 
 * `daDK` (value: `"daDK"`)
+
+* `klGL` (value: `"klGL"`)
 
 * `nlNL` (value: `"nlNL"`)
 
@@ -402,6 +406,8 @@ Name | Type | Description | Notes
 * `hr` (value: `"hr"`)
 
 * `da` (value: `"da"`)
+
+* `kl` (value: `"kl"`)
 
 * `nl` (value: `"nl"`)
 

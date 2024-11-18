@@ -13,17 +13,24 @@
 
 import ApiClient from '../ApiClient';
 /**
-* Enum class GlossaryExportFormat.
+* Enum class FileType.
 * @enum {}
 * @readonly
 */
-export default class GlossaryExportFormat {
+export default class FileType {
     
         /**
          * value: "csv"
          * @const
          */
         "csv" = "csv";
+
+    
+        /**
+         * value: "tsv"
+         * @const
+         */
+        "tsv" = "tsv";
 
     
         /**
@@ -41,17 +48,31 @@ export default class GlossaryExportFormat {
 
     
         /**
-         * value: "tbx"
+         * value: "json"
          * @const
          */
-        "tbx" = "tbx";
+        "json" = "json";
+
+    
+        /**
+         * value: "po"
+         * @const
+         */
+        "po" = "po";
+
+    
+        /**
+         * value: "html"
+         * @const
+         */
+        "html" = "html";
 
     
 
     /**
-    * Returns a <code>GlossaryExportFormat</code> enum value from a Javascript object name.
+    * Returns a <code>FileType</code> enum value from a Javascript object name.
     * @param {Object} data The plain JavaScript object containing the name of the enum value.
-    * @return {module:com.gridly.api/model/GlossaryExportFormat} The enum <code>GlossaryExportFormat</code> value.
+    * @return {module:com.gridly.api/model/FileType} The enum <code>FileType</code> value.
     */
     static constructFromObject(object) {
         return object;

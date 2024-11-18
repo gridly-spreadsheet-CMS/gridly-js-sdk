@@ -1,6 +1,6 @@
 {
   "name": "gridly-client",
-  "version": "4.33.0",
+  "version": "5.9.0",
   "description": "Gridly API documentation",
   "license": "MIT",
   "main": "dist/com.gridly.api/index.js",

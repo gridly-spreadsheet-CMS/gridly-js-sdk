@@ -70,6 +70,8 @@ Name | Type | Description | Notes
 
 * `formula` (value: `"formula"`)
 
+* `user` (value: `"user"`)
+
 
 
 
